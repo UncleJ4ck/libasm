@@ -20,8 +20,8 @@ libasm is written in x86-64 assembly using NASM, making it portable and easy to 
 
 ## Resources
 
-https://en.wikibooks.org/wiki/X86_Disassembly/
-https://wiki.osdev.org/Assembly
+- https://en.wikibooks.org/wiki/X86_Disassembly/
+- https://wiki.osdev.org/Assembly
 ...
 
 ## TO-DO
