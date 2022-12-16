@@ -6,21 +6,20 @@ section .text
 
 ; RDI == src
 ft_strdup:
-    push    rdi    ; save the source into the stack
-    call    ft_strlen     ; we call strlen and then store its value in rax auto
-    mov     rdi, rax  ; size for malloc
-    inc     rdi   ; the null byte incrementation at the end
-    call    malloc WRT ..plt  ; call malloc
-    cmp     rax, 0     ; if malloc failed we return null
-    pop     rsi    ; restore the source to rsi instead of rdi
-    cmp     rax, 0     ; check if malloc returned NULL
-    jz      _return
-    mov     rsi, rdi    ; copy the source to rsi
-    mov     rdi, rax    ; dst is the newly allocated memory
-    call    ft_strcpy
-    mov     rax, rdi ; i return rax as a pointer to my destination (it's doesn't work it's tempo)
-    ret     ; return the pointer to the newly allocated memory
+	push	rbx
+	sub		rsp, 8 ; pushing rbx and aligning the stack and place for rbx
+	push	rdi
+	call	ft_strlen ; calculating the source length
+	mov		rdi, rax ; moving the result to rdi to use it in malloc
+	call	malloc WRT ..plt 
+	pop		rdi
+	cmp		rax, 0 ; check if the source is null
+	jz		return
+	mov		rsi, rdi ; moving the source and destination to ft_strcpy arguments 
+	mov		rdi, rax
+	call	ft_strcpy 
 
-_return:
-    xor     rax, rax    ; set rax to 0
-    ret
+return:
+	add		rsp, 8 ; returning the stack as if it was before pushing rbx
+	pop		rbx
+	ret
