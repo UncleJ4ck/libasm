@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   tester.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amazguit <amazguit@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jacku <jacku@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/08 11:05:00 by amazguit          #+#    #+#             */
 /*   Updated: 2022/12/08 20:14:27 by amazguit         ###   ########.fr       */
