@@ -1,6 +1,8 @@
 # libasm
 
-libasm is a minor implementation of the C standard library, recoded in the x86-64 assembly language using the Netwide Assembler (NASM) tool. It is intended as an educational project to help users understand the low-level workings of a computer and the role of assembly language in programming.
+libasm is a minor implementation of the C standard library, recoded in the x86-64 assembly language using the Netwide Assembler (NASM) tool. It is intended as an educational project to help me understand the low level side of C and having fun.
+
+> but first let's explain some basic stuff
 
 ## CPU architecture and registers
 
