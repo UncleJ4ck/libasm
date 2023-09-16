@@ -28,7 +28,7 @@ libasm is written in x86-64 assembly using NASM, making it portable and easy to 
 
 ## TO-DO
 - [ ] Using ring-0 instructions to do simple stuff (exploring the other side)
-- [ ] malloc from scratch
-- [ ] fixing bugs
-- [ ] optimizing the code by deleting loops
+- [ ] Malloc from scratch
+- [ ] Fixing bugs
+- [ ] Optimizing the code by deleting loops
 .....
